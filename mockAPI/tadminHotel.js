@@ -47,7 +47,7 @@ function save() {
 
 function show() {
     var hotelss = [];
-    callAPI("hotels", "GET", null).then((res) => {
+    callAPI(`hotels`, "GET", null).then((res) => {
         hotelss = res.data;
         let row = "";
         for (i in hotelss) {
